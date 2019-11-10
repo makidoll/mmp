@@ -1,0 +1,6 @@
+node_modules
+out
+dist
+electron/out
+package-lock.json
+music.json

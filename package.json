@@ -1,0 +1,48 @@
+{
+	"name": "makis-mpd-music-player",
+	"version": "0.0.0",
+	"private": true,
+	"description": "A pretty MPD frontend",
+	"main": "electron/out/main.js",
+	"scripts": {
+		"dist": "tsc --p electron && ng build --prod && electron-builder",
+		"electron": "tsc --p electron && electron .",
+		"watch": "ng build --watch"
+	},
+	"dependencies": {
+		"jszip": "^3.2.2",
+		"music-metadata": "^4.8.0",
+		"p-queue": "^6.2.0"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "~0.803.6",
+		"@angular-mdc/web": "^3.2.1",
+		"@angular/animations": "~8.2.8",
+		"@angular/cdk": "~8.2.3",
+		"@angular/cli": "~8.3.6",
+		"@angular/common": "~8.2.8",
+		"@angular/compiler": "~8.2.8",
+		"@angular/compiler-cli": "~8.2.8",
+		"@angular/core": "~8.2.8",
+		"@angular/forms": "~8.2.8",
+		"@angular/language-service": "~8.2.8",
+		"@angular/platform-browser": "~8.2.8",
+		"@angular/platform-browser-dynamic": "~8.2.8",
+		"@angular/router": "~8.2.8",
+		"@types/electron": "^1.6.10",
+		"@types/jszip": "^3.1.6",
+		"@types/node": "^12.7.12",
+		"bootstrap": "^4.3.1",
+		"electron": "^6.0.12",
+		"node-fetch": "^2.6.0",
+		"rxjs": "~6.4.0",
+		"ts-node": "~7.0.0",
+		"tslib": "^1.10.0",
+		"tslint": "~5.15.0",
+		"typescript": "~3.5.3",
+		"zone.js": "~0.9.1"
+	},
+	"build": {
+		"appId": "cat.maki.MakiMusicPlayer"
+	}
+}

@@ -1,0 +1,18 @@
+<!-- <div class="container-fluid title">
+	<div class="row">
+		<div class="col">
+			<h1>Albums</h1>
+			<button mdc-button outlined>
+				<mdc-icon>shuffle</mdc-icon>Shuffle
+			</button>
+			<button mdc-button outlined>
+				<mdc-icon>shuffle</mdc-icon>Shuffle
+			</button>
+		</div>
+	</div>
+</div> -->
+<div class="albums">
+	<div class="album" *ngFor="let album of albums$ | async">
+		<div [style.backgroundImage]="'url(' + album.image + ')'"></div>
+	</div>
+</div>

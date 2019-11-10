@@ -1,0 +1,53 @@
+$mdc-theme-primary: #e91e63;
+$mdc-theme-secondary: #e91e63;
+
+@import "~@angular-mdc/theme/material";
+@import "~bootstrap/scss/bootstrap-grid.scss";
+@import "./fonts/fonts.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	//transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* :not(.material-icons) {
+	font-family: "Roboto", "Noto Sans JP", sans-serif;
+}
+
+body {
+	height: 100%;
+	overflow-x: hidden;
+	//background: #1d1f21;
+	user-select: none;
+}
+
+// br {
+// 	content: "";
+// 	display: block;
+// 	margin: 8px 0;
+// }
+
+@for $i from 1 to 6 {
+	h#{$i} {
+		font-weight: 500;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+}
+
+::-webkit-scrollbar-track {
+	//background: rgba(255, 255, 255, 0.125 / 2);
+	background: rgba(0, 0, 0, 0.125 / 2);
+}
+
+::-webkit-scrollbar-thumb {
+	//background: rgba(255, 255, 255, 0.125);
+	background: rgba(0, 0, 0, 0.125);
+}
+
+// ::-webkit-scrollbar-thumb:hover {
+// 	background: rgba(0, 0, 0, 0.25);
+// }

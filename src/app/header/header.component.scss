@@ -1,0 +1,59 @@
+.top-app-bar {
+	.title-bar {
+		-webkit-app-region: drag;
+		//background: rgba(29, 31, 33, 0.25);
+		height: 32px;
+		padding: 0;
+
+		.start-section {
+			padding-left: 0;
+		}
+
+		.icon {
+			transform: scale(1);
+			width: 48px;
+			height: 32px;
+			background-color: rgba(29, 31, 33, 0.25);
+			background-image: url(../../assets/eendje.png);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		p {
+			margin: 0 16px;
+		}
+
+		button {
+			-webkit-app-region: no-drag;
+			margin: 0 -8px;
+			transform: scale(0.75);
+			// --mdc-ripple-top: 14px !important;
+			// --mdc-ripple-left: 14px !important;
+			--mdc-ripple-fg-scale: 0 !important;
+			--mdc-ripple-fg-size: 0 !important;
+		}
+	}
+}
+
+.drawer {
+	position: fixed;
+
+	top: 32px;
+	bottom: 0;
+	left: 0;
+	width: 48px;
+
+	.mdc-list {
+		padding: 0;
+
+		.mdc-list-item {
+			padding: 2px 12px;
+			margin: 0;
+			border-radius: 0;
+		}
+	}
+
+	.material-icons {
+	}
+}

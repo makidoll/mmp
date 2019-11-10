@@ -1,0 +1,41 @@
+$albumSize: 250px;
+
+.home {
+	height: 100%;
+
+	.row {
+		height: 100%;
+
+		h1 > span {
+			//padding-left: 16px;
+			font-weight: 400;
+		}
+
+		.album {
+			margin-left: auto;
+			width: $albumSize;
+			height: $albumSize;
+			background: red;
+			border-radius: 4px;
+			background-color: rgba(0, 0, 0, 0.125 / 2);
+			background-image: url(../../assets/lullaby.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.slider {
+			margin-top: -16px;
+			width: 350px;
+		}
+
+		.slider-text {
+			margin-top: -16px;
+		}
+
+		.mdc-fab {
+			margin-right: 16px;
+			box-shadow: none;
+		}
+	}
+}

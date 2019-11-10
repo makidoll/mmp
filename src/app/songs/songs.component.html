@@ -1,0 +1,26 @@
+<div class="container">
+	<mdc-data-table class="songs">
+		<table mdcDataTableTable>
+			<thead>
+				<tr mdcDataTableHeaderRow>
+					<th mdcDataTableHeaderCell></th>
+					<th mdcDataTableHeaderCell numberic>No.</th>
+					<th mdcDataTableHeaderCell>Title</th>
+					<th mdcDataTableHeaderCell>Artist</th>
+					<th mdcDataTableHeaderCell>Album</th>
+					<th mdcDataTableHeaderCell>Year</th>
+				</tr>
+			</thead>
+			<tbody mdcDataTableContent>
+				<tr mdcDataTableRow *ngFor="let song of songs$ | async">
+					<td mdcDataTableCell></td>
+					<td mdcDataTableCell>{{ song.track }}</td>
+					<td mdcDataTableCell>{{ song.title }}</td>
+					<td mdcDataTableCell>{{ song.artist }}</td>
+					<td mdcDataTableCell>{{ song.album }}</td>
+					<td mdcDataTableCell>{{ song.date }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</mdc-data-table>
+</div>

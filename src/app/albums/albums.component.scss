@@ -1,0 +1,43 @@
+$padding: 0px;
+$max-size: 250px;
+
+.title {
+	* {
+		display: inline-block;
+		margin-right: 16px;
+	}
+
+	button {
+		margin-top: -8px;
+	}
+}
+
+.albums {
+	display: flex;
+	flex-wrap: wrap;
+	padding: $padding / 2;
+
+	.album {
+		width: 200px;
+		padding: $padding / 2;
+
+		div {
+			width: 100%;
+			border-radius: if($padding == 0px, 0, 4px);
+			padding-top: 100%;
+
+			background-color: rgba(0, 0, 0, 0.125 / 2);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	@for $i from 32 through 2 {
+		@media screen and (max-width: $max-size * $i) {
+			.album {
+				width: 100% / ($i - 1);
+			}
+		}
+	}
+}
